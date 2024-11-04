@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.lesson-content {
+  display: flex;
+  margin-left: -9px;
+}
+
+.chapter-nav {
+  width: 230px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.chapter-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, rgba(23, 43, 77, 0) 0%, rgba(143, 223, 255, 1) 50%, rgba(5, 68, 94, 0) 100%) 1;
+}
+
+.chapter-title.active {
+  background-color: #EFF5FF;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.chap {
+  display: flex;
+  gap: 40px;
+  
+}
+
+.clo {
+  display: flex;
+  gap: 5px;
+}
+
+.chapter-clock {
+  color: #608AD2;
+  margin-top: 2px;
+}
+
+.chapterclock {
+  color: #608AD2;
+  font-weight: 400;
+}
+
+.parts-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.part-section {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 13px;
+  border: 1px solid #A4E6FF;
+  border-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.part-section.active{
+  border-bottom: 1px solid #A4E6FF;
+}
+.part-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.part-info {
+  display: flex;
+  gap: 15px;
+  color: #555;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.icons span {
+  color: #17384D;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-clip: text;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-bar {
+  height: 12px;
+  margin-top: -2px;
+  width: 100%;
+  background-color: #eaf1ff;
+  border-radius:  0px 0px 60px 60px;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+}
+.progress {
+  width: 100%;
+  height: 100%;
+  background-color:#172B4DD9;
+  border-radius:  0px 30px 30px 60px;
+  border-bottom: 0px;
+}
+
+.completion-button {
+  background-color: #EFF5FF;
+  border: 1px solid #99E4FF;
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: default;
+  transition: background-color 0.3s ease;
+  margin-left: 145px;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading-parts {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4d616e;
+}
+
+.heading-title {
+  font-weight: 700;
+  font-size: 18px;
+}
