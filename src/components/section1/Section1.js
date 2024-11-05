@@ -37,7 +37,7 @@ export default function Section1() {
                   }}
                 >
                   <div className="icons">{dash.symbol}</div>
-                  <div className="tit">{dash.title}</div>
+                  <div className={`tit ${selectedSection === dash.id ? "active" : ""}`}>{dash.title}</div>
                 </div>
               </li>
             ))}
@@ -94,3 +94,6 @@ export default function Section1() {
     </>
   );
 }
+
+
+// https://lnkd.in/dd8EKfk6
